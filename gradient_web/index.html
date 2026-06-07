@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRADIENT · Prepárate para tu examen UABC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@200;300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ FIXED BACKGROUND GRID ============ -->
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="nav glass" id="nav">
+    <a href="#top" class="nav-brand">
+      <img src="images/logo_white.png" alt="GRADIENT" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#programas" data-num="01">Programas</a></li>
+      <li><a href="#nosotros" data-num="02">Nosotros</a></li>
+      <li><a href="#profesores" data-num="03">Profesores</a></li>
+      <li><a href="#contacto" data-num="04">Contacto</a></li>
+    </ul>
+    <a href="#login" class="nav-cta">
+      <span>Ingresar</span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header id="top" class="hero">
+    <!-- Parallax floating assets -->
+    <img src="images/planeta.png" class="float-asset asset-planeta" data-speed="0.35" alt="" />
+    <img src="images/cohete.png"  class="float-asset asset-cohete"  data-speed="-0.25" alt="" />
+    <img src="images/reloj.png"   class="float-asset asset-reloj"   data-speed="0.55" alt="" />
+    <img src="images/libro.png"   class="float-asset asset-libro"   data-speed="-0.35" alt="" />
+    <img src="images/book.png"    class="float-asset asset-book"    data-speed="0.20" alt="" />
+
+    <div class="hero-inner">
+      <div class="hero-kicker">
+        <span class="dot"></span>
+        <span>Simulador UABC · Hecho por estudiantes</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line">
+          <span class="word word-stroke">PREPÁRATE</span>
+        </span>
+        <span class="line">
+          <span class="word">PARA TU</span>
+          <span class="word word-accent">EXAMEN</span>
+        </span>
+        <span class="line">
+          <span class="word word-stroke">&amp;&nbsp;ASEGURA</span>
+          <span class="word">TU LUGAR</span>
+        </span>
+      </h1>
+
+      <p class="hero-sub">
+        Practica matemáticas, lenguaje y ciencias con un simulador que se adapta a ti.
+        Sin costos ocultos. Sin barreras.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#programas" class="btn btn-primary glass-btn">
+          <span>Empezar a practicar</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#nosotros" class="btn btn-ghost">Conocer más</a>
+      </div>
+
+      <div class="hero-stats glass">
+        <div class="stat">
+          <span class="stat-num" data-count="1200">0</span>
+          <span class="stat-label">Estudiantes activos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="300">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Preguntas reales</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">Áreas de estudio</span>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <span class="scroll-bar"><span class="scroll-bar-fill"></span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>MATEMÁTICAS</span><span>✦</span>
+      <span>LENGUAJE</span><span>✦</span>
+      <span>CIENCIAS</span><span>✦</span>
+      <span>UABC 2026</span><span>✦</span>
+      <span>MATEMÁTICAS</span><span>✦</span>
+      <span>LENGUAJE</span><span>✦</span>
+      <span>CIENCIAS</span><span>✦</span>
+      <span>UABC 2026</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- ============ PROGRAMAS ============ -->
+  <section id="programas" class="section section-programas">
+    <img src="images/cohete_fuego.png" class="deco deco-cohete-fuego parallax" data-speed="0.15" alt="" />
+    <img src="images/brain.png"        class="deco deco-brain parallax"        data-speed="-0.1" alt="" />
+
+    <div class="section-head">
+      <span class="section-num">— 01</span>
+      <h2 class="section-title">
+        <span class="title-outline">NUESTROS</span>
+        <span class="title-solid">PROGRAMAS</span>
+      </h2>
+      <p class="section-lead">
+        Tres áreas. Un objetivo: que entres a la universidad con la confianza de un Top&nbsp;1.
+      </p>
+    </div>
+
+    <div class="programs-grid">
+      <!-- MATEMÁTICAS -->
+      <article class="program-card glass" data-program="math" style="--p-accent:#6e7cfb; --p-accent-2:#c7c9f7;">
+        <div class="program-head">
+          <span class="program-num">01</span>
+          <span class="program-tag">Práctica activa</span>
+        </div>
+        <img src="images/pi.png" alt="Matemáticas" class="program-img" />
+        <h3 class="program-title">Matemáticas</h3>
+        <p class="program-desc">
+          Álgebra, geometría y razonamiento. Preguntas de verdad, con retroalimentación paso a paso.
+        </p>
+        <ul class="program-chips">
+          <li>Álgebra</li><li>Geometría</li><li>Razonamiento</li>
+        </ul>
+        <a href="#" class="program-link">
+          <span>Empezar</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <!-- LENGUAJE -->
+      <article class="program-card glass featured" data-program="lang" style="--p-accent:#f19fff; --p-accent-2:#f6cafc;">
+        <div class="program-head">
+          <span class="program-num">02</span>
+          <span class="program-tag">Más solicitado</span>
+        </div>
+        <img src="images/lapiz.png" alt="Lenguaje" class="program-img" />
+        <h3 class="program-title">Lenguaje</h3>
+        <p class="program-desc">
+          Comprensión lectora, redacción y análisis. Leer bien es entender el mundo.
+        </p>
+        <ul class="program-chips">
+          <li>Lectura</li><li>Gramática</li><li>Redacción</li>
+        </ul>
+        <a href="#" class="program-link">
+          <span>Empezar</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <!-- CIENCIAS -->
+      <article class="program-card glass" data-program="sci" style="--p-accent:#f1cb42; --p-accent-2:#fdebab;">
+        <div class="program-head">
+          <span class="program-num">03</span>
+          <span class="program-tag">Nuevo</span>
+        </div>
+        <img src="images/tierra.png" alt="Ciencias" class="program-img" />
+        <h3 class="program-title">Ciencias</h3>
+        <p class="program-desc">
+          Física, química y biología aplicadas. De lo micro a lo cósmico, con práctica real.
+        </p>
+        <ul class="program-chips">
+          <li>Física</li><li>Química</li><li>Biología</li>
+        </ul>
+        <a href="#" class="program-link">
+          <span>Empezar</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ NOSOTROS ============ -->
+  <section id="nosotros" class="section section-nosotros">
+    <img src="images/megafono.png" class="deco deco-megafono parallax" data-speed="0.2" alt="" />
+    <img src="images/chat.png"     class="deco deco-chat parallax"     data-speed="-0.15" alt="" />
+
+    <div class="section-head align-right">
+      <span class="section-num">— 02</span>
+      <h2 class="section-title">
+        <span class="title-outline">SOBRE</span>
+        <span class="title-solid title-yellow">NOSOTROS</span>
+      </h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card glass">
+        <div class="about-num">01</div>
+        <h4>Accesible para todos</h4>
+        <p>
+          Sabemos que los cursos de preparación para la <strong>UABC</strong> son caros.
+          Por eso construimos este simulador: para que el dinero nunca sea el obstáculo.
+        </p>
+      </div>
+
+      <div class="about-card glass about-hero">
+        <p class="about-quote">
+          “Hecho por estudiantes,<br/>
+          <span class="about-quote-accent">para estudiantes.</span>”
+        </p>
+        <p class="about-body">
+          Somos un grupo de jóvenes comprometidos con la educación y la igualdad
+          de oportunidades. Creemos en el poder del esfuerzo, la dedicación y el
+          apoyo mutuo para lograr grandes cosas.
+        </p>
+      </div>
+
+      <div class="about-card glass">
+        <div class="about-num">02</div>
+        <h4>Práctica real</h4>
+        <p>
+          Preguntas estilo examen, retroalimentación inmediata y un tutor con IA
+          que te explica los temas a tu ritmo.
+        </p>
+      </div>
+
+      <div class="about-card glass">
+        <div class="about-num">03</div>
+        <h4>Comunidad</h4>
+        <p>
+          No estás solo. Miles de estudiantes se preparan con GRADIENT cada temporada.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROFESORES ============ -->
+  <section id="profesores" class="section section-profesores">
+    <img src="images/pilabook.png" class="deco deco-pila parallax" data-speed="0.1" alt="" />
+
+    <div class="section-head">
+      <span class="section-num">— 03</span>
+      <h2 class="section-title">
+        <span class="title-outline">NUESTROS</span>
+        <span class="title-solid title-green">PROFESORES</span>
+      </h2>
+      <p class="section-lead">
+        La mejor preparación viene de quienes ya han vencido el mismo reto que enfrentarás.
+      </p>
+    </div>
+
+    <div class="teacher-card glass">
+      <div class="teacher-visual">
+        <div class="teacher-avatar">
+          <span>AF</span>
+        </div>
+        <div class="teacher-badge">
+          <span class="badge-num">#1</span>
+          <span class="badge-label">Top examen UABC</span>
+        </div>
+      </div>
+      <div class="teacher-content">
+        <span class="teacher-tag">Profesor destacado</span>
+        <h3 class="teacher-name">Adrián Félix</h3>
+        <p class="teacher-role">Física Matemáticas · UABC</p>
+        <p class="teacher-bio">
+          Adrián logró posicionarse en el <strong>Top 1</strong> del examen de admisión,
+          demostrando un dominio absoluto de los conocimientos requeridos. Si alguien
+          sabe cómo superar este desafío, es él. Ahora, está aquí para guiarte a hacer lo mismo.
+        </p>
+        <div class="teacher-stats">
+          <div><span>100</span><small>Puntaje</small></div>
+          <div><span>+200</span><small>Estudiantes</small></div>
+          <div><span>4.9</span><small>Rating</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section id="contacto" class="section section-contacto">
+    <div class="section-head">
+      <span class="section-num">— 04</span>
+      <h2 class="section-title">
+        <span class="title-outline">HABLEMOS</span>
+        <span class="title-solid title-blue">CONTIGO</span>
+      </h2>
+      <p class="section-lead">
+        ¿Tienes preguntas? Estamos aquí para ayudarte a dar el siguiente paso.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <a href="https://wa.me/3171288580" target="_blank" class="contact-card glass">
+        <img src="images/whatsapp.png" alt="" />
+        <div>
+          <span class="contact-label">WhatsApp</span>
+          <span class="contact-value">+52 317 128 8580</span>
+        </div>
+        <svg class="contact-arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+
+      <a href="mailto:esi@iteso.mx" class="contact-card glass">
+        <img src="images/mail.png" alt="" />
+        <div>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">esi@iteso.mx</span>
+        </div>
+        <svg class="contact-arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+
+      <a href="tel:3171288580" class="contact-card glass">
+        <img src="images/call.png" alt="" />
+        <div>
+          <span class="contact-label">Teléfono</span>
+          <span class="contact-value">+52 317 128 8580</span>
+        </div>
+        <svg class="contact-arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+
+    <div class="social-strip glass">
+      <span class="social-label">Síguenos</span>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="" /></a>
+        <a href="#" aria-label="Facebook"><img src="images/fb.png" alt="" /></a>
+        <a href="#" aria-label="YouTube"><img src="images/youtube.png" alt="" /></a>
+        <a href="#" aria-label="TikTok"><img src="images/tiktok.png" alt="" /></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo_white.png" alt="GRADIENT" />
+        <p>Hecho por estudiantes, para estudiantes.</p>
+      </div>
+      <div class="footer-names">
+        <div class="name-block" style="--c:#acd753;">
+          <span class="name-back">LEMUS</span>
+          <span class="name-front">Diego</span>
+        </div>
+        <div class="name-block" style="--c:#f1cb42;">
+          <span class="name-back">GARCÍA</span>
+          <span class="name-front">Josué</span>
+        </div>
+        <div class="name-block" style="--c:#f19fff;">
+          <span class="name-back">RUBIO</span>
+          <span class="name-front">Karen</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GRADIENT · UABC Entrance Exam Simulator</span>
+      <span class="footer-mono">v2.0 / Made with ♥ in MX</span>
+    </div>
+  </footer>
+
+  <!-- ============ LOGIN MODAL ============ -->
+  <div class="modal" id="login" role="dialog" aria-modal="true">
+    <a href="#top" class="modal-backdrop" aria-label="Cerrar"></a>
+    <div class="modal-dialog glass">
+      <a href="#top" class="modal-close" aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </a>
+      <span class="modal-kicker">Bienvenido de vuelta</span>
+      <h3 class="modal-title">Ingresa a GRADIENT</h3>
+      <form class="modal-form" onsubmit="event.preventDefault(); alert('Conectar al backend /api/auth/login');">
+        <label>
+          <span>Email</span>
+          <input type="email" placeholder="tu@correo.com" required />
+        </label>
+        <label>
+          <span>Contraseña</span>
+          <input type="password" placeholder="••••••••" required />
+        </label>
+        <button type="submit" class="btn btn-primary glass-btn">
+          <span>Entrar</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+      <p class="modal-foot">¿No tienes cuenta? <a href="#">Regístrate</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
